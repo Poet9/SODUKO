@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SODUKO</title>
+        <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+        <script src="jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <header>
+    <h1 class="firstHeader">SODUKO</h1>
+    <div class="buttons">
+      <button class="replay" title="replay" onClick = "window.location.reload();"><i class ="ion-ios-refresh-outline"></i></button>
+      <button id="hints" title="hints"><i class="ion-ios-compose-outline"></i></button>
+      <button id="startGame" title="start game"><i class="ion-android-send"></i></button>
+  </div>
+  <div id="difficulties">
+    <label><input class="difficulty" id="easy" type="radio" name="diff" checked>Easy</label>
+    <label><input class="difficulty" id="medium" type="radio" name="diff">Medium</label>
+    <label><input class="difficulty" id="hard" type="radio" name="diff">Hard</label>
+  </div>
+  <div id="themes">
+    <label><input class="theme" id="light" type="radio" name="display">Light</label>
+    <label><input class="theme" id="dark" type="radio" name="display" checked>Dark</label>
+  </div>
+  <div></div>
+  </header>
+  <body>
+  <div class = "game">  
+    <div id="gameTable">
+      <!-- **************************first line **********************
+      <p class="tableElement" id="11"></p>
+      <p class="tableElement" id="12"></p>
+      <P class="tableElement rightBorder" id="13"></P>
+      <p class="tableElement" id="14">3</p>
+      <p class="tableElement" id="15"></p>
+      <p class="tableElement rightBorder" id="16"></p>
+      <p class="tableElement" id="17"></p>
+      <p class="tableElement" id="18">7</p>
+      <p class="tableElement" id="19"></p>
+
+      <p class="tableElement"></p>
+      <p class="tableElement"></p>
+      <P class="tableElement"></P>
+      <p class="tableElement">3</p>
+      <p class="tableElement"></p>
+      <p class="tableElement"></p>
+      <p class="tableElement"></p>
+      <p class="tableElement">7</p>
+      <p class="tableElement"></p>-->
+    </div>
+    <!--******************  number selection  ***********************-->
+    <div id="digits">
+      <p class="selectNumber" id="one">1</p>
+      <p class="selectNumber" id="two">2</p>
+      <p class="selectNumber" id="three">3</p>
+      <p class="selectNumber" id="four">4</p>
+      <p class="selectNumber" id="five">5</p>
+      <p class="selectNumber" id="six">6</p>
+      <p class="selectNumber" id="seven">7</p>
+      <p class="selectNumber" id="eight">8</p>
+      <p class="selectNumber" id="nine">9</p>
+    </div>
+  </div> 
+    
+    
+   
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,144 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: #212824;
+  position: relative;
+  color: aliceblue;
+  font: 16px sans-serif;
+}
+
+/***game name***/
+.firstHeader{
+  font-size: 58px;
+}
+/*******header***********/
+header{
+  text-align: center;
+  padding-bottom: 20px;
+  border-bottom: 2px solid black;
+}
+  /**************************buttons***********************************/
+.buttons{
+  display: inline-block;
+  height: 40px;
+  width: 150px;
+}
+.replay,
+#hints,
+#startGame{
+  font-size: 25px;
+  background-color: inherit;
+  margin-left: 5px;
+  padding: 2px 2px;
+  border: 0;
+  font-size: 30px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.replay:hover,
+#hints:hover,
+#startGame:hover {
+  color: #747474d3;
+}
+.replay:focus,
+#startGame:focus {
+  color: red;
+  outline: none;
+}
+#hints:focus{
+  outline: none;
+}
+.hintas{
+  color: red;
+  background-color: red;
+}
+/*****************************difficulty*****************************/
+#difficulties{
+  margin-left: 5%;
+  display: inline-block;
+}
+
+
+/******************************theme**********************************/
+#themes{
+  display: inline-block;
+  margin-left: 5%;
+}
+/****************************light theme*******************************/
+.light{
+  background-color: #ffffffc5;
+  color: #222222;
+}
+input{
+  margin-right: 5px;
+}
+
+/*************************number  selector *********************************/
+#digits{
+  display: inline-block;
+  margin: 10px 0 0 20px ;
+}
+.selectNumber{
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: #ffffff50;
+  font-size: 40px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  cursor: pointer;
+}
+.selectNumber:hover{
+  background-color: #ffffff7a;
+}
+.selected {
+  background-color: #3268ff;
+}
+.wrong{
+  background-color: #fc2c2cd3;
+}
+/********************************input table**********************************/
+.game{
+  display: flex;
+  justify-content: center;
+}
+#gameTable{
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+  width: 500px;
+  height: 500px;
+}
+/*********************************input fields********************************/
+.tableElement{
+  border: 1px solid black;
+  width: 50px;
+  height: 50px;
+  font-size: 40px;
+  text-align: center;
+}
+.rightBorder{
+  border-right: 4px solid black;
+}
+.bottomBorder{
+  border-bottom: 4px solid black;
+}
+
+
+
+/*********************** win text**********************/
+.winText{
+  font-size: 30px;
+  color: #138d1d;
+}
+/**********************hinted class********************/
+.hinted{
+  font-size: 16px;
+  color: #b3b3b3fd;
+  text-align: justify;
+}
